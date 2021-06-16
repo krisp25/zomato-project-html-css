@@ -9,6 +9,10 @@ body {
     background-color: #ebf2ff;
 }
 
+section {
+    margin: 40px 0;;
+}
+
 .navbar {
     background-color: white;
     display: flex;
@@ -36,9 +40,12 @@ body {
     #ff512f 100%
     );
     color: #fff;
+    margin: 10px;
     border: none;
     padding: 13px 20px;
     border-radius: 6px;
+    box-shadow: 0 0 20px #eee;
+    display: block;
     cursor: pointer;
 }
 
@@ -192,45 +199,47 @@ body {
     border-radius: 6px;
 }
 
-.stay__updated__container {
-    display: flex;
-    flex-direction: column;
-    place-content: center;
-    margin: 0 auto;
+.email__subcribe__container {
+    margin-top: 40px;
     width: 100%;
+    padding: 15px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.stay__updated__text {
-    width: 98%;
+.subscribe__items {
     margin: 0 auto;
-    font-family: 'Merriweather', serif;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.email__text {
     font-size: 29px;
     font-weight: 900;
     color: #1d3557;
-    margin-top: 40px;
-    margin-bottom: 5px;
+    margin: 0 auto;
     text-align: start;
+    width: 100%;
 }
 
-.email__input__container {
+.email__subcribe__input__field {
     display: flex;
-    justify-content: start;
-    width: 98%;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
     margin: 0 auto;
 }
 
 .email__input {
     border: 1px solid #ee89a0;
     background-color: #fcedf0;
-    padding-left: 10px;
-    padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 5px;
-    margin: 8px 0;
+    border-radius: 6px;
+    padding: 10px;
 }
 
-.update__button {
+.email__button {
     background-image: linear-gradient(
     to right,
     #ff512f 0%,
@@ -238,12 +247,12 @@ body {
     #ff512f 100%
     );
     color: #fff;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 12px;
     border: none;
-    padding: 10px 25px;
-    margin-left: 10px;
+    padding: 17px 20px;
     border-radius: 6px;
+    box-shadow: 0 0 20px #eee;
+    display: block;
     cursor: pointer;
 }
 
@@ -427,15 +436,8 @@ body {
         margin-left: 30px;
     }
 
-    .stay__updated__container {
-        display: block;
-        max-width: 100%;
-        margin-top: -35px;
-    }
-
-    .stay__updated__text {
+    .email__text {
         font-size: 35px;
-        width: 70%;
     }
 
     .email__input__container {
@@ -447,6 +449,11 @@ body {
         padding-bottom: 10px;
         padding-left: 10px;
         padding-right: 240px;
+    }
+
+    .email__button {
+        padding: 18px 20px;
+        font-size: 15px;
     }
 
     .quote__container {
@@ -547,16 +554,11 @@ body {
         height: 300px;
     }
 
-    .stay__updated__text {
+    .email__text {
         font-size: 50px;
-        width: 49%;
-    }
-
-    .email__input__container {
-        width: 49%;
     }
     
-    .update__button {
+    .email__button {
         padding: 18px 40px;
         font-size: 16px;
     }
